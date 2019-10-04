@@ -22,14 +22,12 @@ def callback():
     decoded = json.loads(json_line)
     user =decoded['originalDetectentRequest']['payload']['data']['replyToken']
     userText =decoded['queryResult']['intent']['displayName']
-    #sendText(user,userText)
     if (userText == 'กระเเต') :
-     sendText(user'ขอบคุณที่ชม')
+        sendText(user'ขอบคุณที่ชม')
     elif (userText == 'คิดว่าเราสวยป่ะ') :
-     sendText(user'แน่นอนเธอสวยที่สุด')
+        sendText(user'แน่นอนเธอสวยที่สุด')
     else :
-       sendText(user'คำถามนี้มันช่างตอบยากส้ะเหลือเกิน')
-
+        sendText(user'คำถามนี้มันช่างตอบยากส้ะเหลือเกิน')
     return '',200
 
 def sendText(user, text):
