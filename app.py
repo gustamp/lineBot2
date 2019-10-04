@@ -28,7 +28,7 @@ def callback():
         sendText(user'แน่นอนเธอสวยที่สุด')
     else :
         sendText(user'คำถามนี้มันช่างตอบยากส้ะเหลือเกิน')
-          return '',200
+    return '',200
 
 def sendText(user, text):
   LINE_API = 'https://api.line.me/v2/bot/message/reply'
